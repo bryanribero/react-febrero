@@ -1,6 +1,6 @@
 import React from 'react'
 import { useContext } from 'react'
-import { ThemeContext } from '../context/ThemeContext'
+import { ThemeContext } from '../context/ThemeContext.jsx'
 import '../css/boxStyle.css'
 
 export default function Box() {
