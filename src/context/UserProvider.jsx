@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { UserContext } from './UserContext'
+import { UserContext } from './UserContext.js'
 
 export function UserProvider({ children }) {
   const [name, setName] = useState('')

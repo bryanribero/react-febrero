@@ -6,6 +6,7 @@ import Box from './component/Box.jsx'
 import './App.css'
 import { UserProvider } from './context/UserProvider.jsx'
 import User from './component/User.jsx'
+import Padre from './component/Padre.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -34,6 +35,8 @@ function App() {
           <Box></Box>
 
           <User></User>
+
+          <Padre />
         </UserProvider>
       </ThemeProvider>
     </>
