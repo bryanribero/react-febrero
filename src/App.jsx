@@ -9,6 +9,8 @@ import User from './component/User.jsx'
 import Padre from './component/Padre.jsx'
 import Condicional from './component/Condicional.jsx'
 import Condicional2 from './component/Condicional2.jsx'
+import Array from './component/NameList.jsx'
+import NameList from './component/NameList.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -27,12 +29,16 @@ function App() {
           </div>
           <h1>Vite + React</h1>
           <div className="card">
-            <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
+            <button onClick={() => setCount((count) => count + 1)}>
+              count is {count}
+            </button>
             <p>
               Edit <code>src/App.jsx</code> and save to test HMR
             </p>
           </div>
-          <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
+          <p className="read-the-docs">
+            Click on the Vite and React logos to learn more
+          </p>
 
           <Box></Box>
 
@@ -40,6 +46,7 @@ function App() {
 
           <Padre />
           <Condicional2 />
+          <NameList />
         </UserProvider>
       </ThemeProvider>
     </>
