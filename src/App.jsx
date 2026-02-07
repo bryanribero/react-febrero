@@ -7,6 +7,8 @@ import './App.css'
 import { UserProvider } from './context/UserProvider.jsx'
 import User from './component/User.jsx'
 import Padre from './component/Padre.jsx'
+import Condicional from './component/Condicional.jsx'
+import Condicional2 from './component/Condicional2.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -37,6 +39,7 @@ function App() {
           <User></User>
 
           <Padre />
+          <Condicional2 />
         </UserProvider>
       </ThemeProvider>
     </>
