@@ -11,6 +11,7 @@ import Condicional from './component/Condicional.jsx'
 import Condicional2 from './component/Condicional2.jsx'
 import Array from './component/NameList.jsx'
 import NameList from './component/NameList.jsx'
+import List from './component/List.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -47,6 +48,7 @@ function App() {
           <Padre />
           <Condicional2 />
           <NameList />
+          <List />
         </UserProvider>
       </ThemeProvider>
     </>
