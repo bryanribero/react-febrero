@@ -10,13 +10,15 @@ import Array from './component/NameList.jsx'
 import NameList from './component/NameList.jsx'
 import List from './component/List.jsx'
 import Comidas from './component/Comidas.jsx'
+import FetchPokemon from './component/FetchPokemon.jsx'
 
 function App() {
   return (
     <>
       <ThemeProvider>
         <UserProvider>
-          <Comidas />
+          <FetchPokemon />
+          {/* <Comidas />
 
           <Box></Box>
 
@@ -25,7 +27,7 @@ function App() {
           <Padre />
           <Condicional2 />
           <NameList />
-          <List />
+          <List /> */}
         </UserProvider>
       </ThemeProvider>
     </>
