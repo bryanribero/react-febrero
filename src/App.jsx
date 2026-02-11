@@ -11,13 +11,15 @@ import NameList from './component/NameList.jsx'
 import List from './component/List.jsx'
 import Comidas from './component/Comidas.jsx'
 import FetchPokemon from './component/FetchPokemon.jsx'
+import Form from './component/Form.jsx'
 
 function App() {
   return (
     <>
       <ThemeProvider>
         <UserProvider>
-          <FetchPokemon />
+          <Form />
+          {/* <FetchPokemon /> */}
           {/* <Comidas />
 
           <Box></Box>
