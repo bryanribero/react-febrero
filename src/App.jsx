@@ -13,13 +13,15 @@ import Comidas from './component/Comidas.jsx'
 import FetchPokemon from './component/FetchPokemon.jsx'
 import Form from './component/Form.jsx'
 import FormControlled from './component/FormControlled.jsx'
+import FormUncontrolled from './component/FormUncontrolled.jsx'
 
 function App() {
   return (
     <>
       <ThemeProvider>
         <UserProvider>
-          <FormControlled />
+          <FormUncontrolled />
+          {/* <FormControlled /> */}
           {/* <Form /> */}
           {/* <FetchPokemon /> */}
           {/* <Comidas />
