@@ -14,17 +14,21 @@ import FetchPokemon from './component/FetchPokemon.jsx'
 import Form from './component/Form.jsx'
 import FormControlled from './component/FormControlled.jsx'
 import FormUncontrolled from './component/FormUncontrolled.jsx'
+import SaludoProvide from './context/SaludoProvide.jsx'
+import Saludo from './component/Saludo.jsx'
 
 function App() {
   return (
     <>
       <ThemeProvider>
         <UserProvider>
-          <FormUncontrolled />
-          {/* <FormControlled /> */}
-          {/* <Form /> */}
-          {/* <FetchPokemon /> */}
-          {/* <Comidas />
+          <SaludoProvide>
+            <Saludo />
+            <FormUncontrolled />
+            {/* <FormControlled /> */}
+            {/* <Form /> */}
+            {/* <FetchPokemon /> */}
+            {/* <Comidas />
 
           <Box></Box>
 
@@ -34,6 +38,7 @@ function App() {
           <Condicional2 />
           <NameList />
           <List /> */}
+          </SaludoProvide>
         </UserProvider>
       </ThemeProvider>
     </>
