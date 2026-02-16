@@ -16,6 +16,7 @@ import FormControlled from './component/FormControlled.jsx'
 import FormUncontrolled from './component/FormUncontrolled.jsx'
 import SaludoProvide from './context/SaludoProvide.jsx'
 import Saludo from './component/Saludo.jsx'
+import Keys from './component/Keys.jsx'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <ThemeProvider>
         <UserProvider>
           <SaludoProvide>
+            <Keys />
             <Saludo />
             <FormUncontrolled />
             {/* <FormControlled /> */}
