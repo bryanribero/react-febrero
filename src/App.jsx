@@ -17,32 +17,17 @@ import FormUncontrolled from './component/FormUncontrolled.jsx'
 import SaludoProvide from './context/SaludoProvide.jsx'
 import Saludo from './component/Saludo.jsx'
 import Keys from './component/Keys.jsx'
+import { Route, Routes } from 'react-router-dom'
+import Home from './Pages/Home.jsx'
+import FrutasPage from './Pages/FrutasPage.jsx'
 
 function App() {
   return (
     <>
-      <ThemeProvider>
-        <UserProvider>
-          <SaludoProvide>
-            <Keys />
-            <Saludo />
-            <FormUncontrolled />
-            {/* <FormControlled /> */}
-            {/* <Form /> */}
-            {/* <FetchPokemon /> */}
-            {/* <Comidas />
-
-          <Box></Box>
-
-          <User></User>
-
-          <Padre />
-          <Condicional2 />
-          <NameList />
-          <List /> */}
-          </SaludoProvide>
-        </UserProvider>
-      </ThemeProvider>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/frutas" element={<FrutasPage />} />
+      </Routes>
     </>
   )
 }
