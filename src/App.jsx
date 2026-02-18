@@ -20,14 +20,21 @@ import Keys from './component/Keys.jsx'
 import { Route, Routes } from 'react-router-dom'
 import Home from './Pages/Home.jsx'
 import FrutasPage from './Pages/FrutasPage.jsx'
+import Productos from './Pages/Productos.jsx'
+import ProductosProvider from './context/ProductosProvider.jsx'
+import ProductosDetalle from './Pages/ProductosDetalle.jsx'
 
 function App() {
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/frutas" element={<FrutasPage />} />
-      </Routes>
+      <ProductosProvider>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/frutas" element={<FrutasPage />} />
+          <Route path="/productos" element={<Productos />} />
+          <Route path="/productos/:id" element={<ProductosDetalle />} />
+        </Routes>
+      </ProductosProvider>
     </>
   )
 }
