@@ -23,6 +23,7 @@ import FrutasPage from './Pages/FrutasPage.jsx'
 import Productos from './Pages/Productos.jsx'
 import ProductosProvider from './context/ProductosProvider.jsx'
 import ProductosDetalle from './Pages/ProductosDetalle.jsx'
+import SearchParams from './Pages/SearchParams.jsx'
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="/frutas" element={<FrutasPage />} />
           <Route path="/productos" element={<Productos />} />
           <Route path="/productos/:id" element={<ProductosDetalle />} />
+          <Route path="/searchParams" element={<SearchParams />} />
         </Routes>
       </ProductosProvider>
     </>

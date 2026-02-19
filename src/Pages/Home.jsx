@@ -15,6 +15,13 @@ export default function Home() {
       <NavLink to={'/productos'}>
         <button>Productos</button>
       </NavLink>
+
+      <br />
+      <br />
+
+      <NavLink to={'/searchParams'}>
+        <button>SearchParams</button>
+      </NavLink>
     </div>
   )
 }
